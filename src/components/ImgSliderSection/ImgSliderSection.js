@@ -1,29 +1,16 @@
 import React from "react";
-import * as $ from "jquery";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import
+  {
+  ImageSliderWrapper,
+  OwlCarouselWrapper,
+  CardsWrapper,
+  CardBoxWrapper,
+} from "./ImgSliderSection.style";
 
 export default function ImgSliderSection() {
-  // $(document).ready(function () {
-  //   console.log("component ready");
-  //   $(".owl-carousel-1").owlCarousel({
-  //     loop: true,
-  //     // nav:true,
-  //     // dots:true,
-  //     items: 1,
-  //     autoplay: true,
-  //     autoplayTimeout: 5000,
-  //     autoplayHoverPause: true,
-  //     smartSpeed: 1200,
-  //         responsive:{0:{items:1},
-  //     600:{items:2},1000:{items:2}}
-  //   });
-  // });
-
   return (
-    <section id="img-slider-section">
-      <div class="owl-carousel owl-carousel-1">
+    <ImageSliderWrapper>
+      <OwlCarouselWrapper className="owl-carousel owl-carousel-1">
         <div class="item">
           <img src="http://localhost:3000/assets/imgs/tech-world.jpg" />
 
@@ -37,9 +24,9 @@ export default function ImgSliderSection() {
             <strong>There is no FAILURE only FEEDBACK.</strong>
           </div>
         </div>
-      </div>
-      <div class="cards">
-        <div class="card-box">
+      </OwlCarouselWrapper>
+      <CardsWrapper>
+        <CardBoxWrapper>
           <div class="icon">
             <i class="fa-solid fa-book"></i>
           </div>
@@ -49,8 +36,8 @@ export default function ImgSliderSection() {
           <div class="view">
             <b>View</b>
           </div>
-        </div>
-        <div class="card-box">
+        </CardBoxWrapper>
+        <CardBoxWrapper>
           <div class="icon">
             <i class="fa-solid fa-video"></i>
           </div>
@@ -60,8 +47,8 @@ export default function ImgSliderSection() {
           <div class="view">
             <b>View</b>
           </div>
-        </div>
-        <div class="card-box">
+        </CardBoxWrapper>
+        <CardBoxWrapper>
           <div class="icon">
             <i class="fa-solid fa-person-chalkboard"></i>
           </div>
@@ -71,8 +58,8 @@ export default function ImgSliderSection() {
           <div class="view">
             <b>View</b>
           </div>
-        </div>
-      </div>
-    </section>
+        </CardBoxWrapper>
+      </CardsWrapper>
+    </ImageSliderWrapper>
   );
 }

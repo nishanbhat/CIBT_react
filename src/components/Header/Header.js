@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  BurgerMenuWrapper,
   HeaderWrappper,
   NavBarWrapper,
-  NavItemWrapper
+  BurgerMenuWrapper,
+  NavItemWrapper,
 } from "./Header.style";
 
 export default function Header() {
@@ -14,8 +14,8 @@ export default function Header() {
           <img
             src="http://localhost:3000/assets/imgs/short-info-logo.jpg"
             style={{
-              width: "235px",
-              marginTop: "-10px",
+              width: "200px",
+              marginTop: "10px",
             }}
             alt="logo"
           />
@@ -40,7 +40,7 @@ export default function Header() {
         <a href="#contacts">
           <li>CONTACTS</li>
         </a>
-        <a href="#enroll">
+        <a href="#enroll" className="enroll-now">
           <li>ENROLL NOW</li>
           <i
             className="fa-solid fa-phone-volume"
@@ -55,10 +55,11 @@ export default function Header() {
         <i
           className="fa-solid fa-bars"
           style={{
-            fontSize: "20px",
+            fontSize: "30px",
+            // marginTop: "-8px",
           }}
         ></i>
-        <NavItemWrapper>
+        <NavItemWrapper className="nav-item">
           <a href="/index.html">
             <li>HOME</li>
           </a>
@@ -79,13 +80,13 @@ export default function Header() {
           </a>
           <a href="#enroll" className="enroll-now">
             <li>ENROLL NOW</li>
-            <i
+            {/* <i
               className="fa-solid fa-phone-volume"
               style={{
                 fontSize: "30px",
                 marginTop: "-8px",
               }}
-            ></i>
+            ></i> */}
           </a>
         </NavItemWrapper>
       </BurgerMenuWrapper>

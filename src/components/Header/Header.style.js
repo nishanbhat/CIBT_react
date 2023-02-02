@@ -13,10 +13,26 @@ export const HeaderWrappper = styled.section`
   width: 100%;
   z-index: 10;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @media (max-width: 1200px) {
+  .CIBT-logo img {
+    width: 200px !important;
+  }
+
+  @media (max-width: 270px) {
+  .CIBT-logo img {
+    width: 50px !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .CIBT-logo img {
+    width: 100px !important;
+  }
+}
 `;
 
 export const NavBarWrapper = styled.ul`
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +42,19 @@ export const NavBarWrapper = styled.ul`
     margin-bottom: 0px;
     padding-left: 0px;
     float: right;
-    width: 100%;
+    // width: 100%;
+
+    @media (max-width: 1055px) {
+      display: none;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 12px !important;
+    }
+
+    @media (max-width: 1464px) {
+      font-size: 15px;
+    }
 
   a {
     text-decoration: none;
@@ -37,65 +65,82 @@ export const NavBarWrapper = styled.ul`
     justify-content: center;
     /* margin-left: -30px; */
      display: flex;
-    
 
-    > li {
-      list-style: none;
-      padding: 7px;
+    @media (max-width: 1464px) {
+      width: 120px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 100px !important;
     }
 
     &:hover {
-    background: #87523d;
-    color: #ffffff;
+      background: #87523d;
+      color: #ffffff;
+      padding: 7px;
+      border-radius: 7px;
+      width: 155px;
+      text-align: center;
+      border: 1px solid #fff;
+
+      @media (max-width: 1200px) {
+        padding: 7px;
+        width: 100px;
+      }
+
+      @media (max-width: 1464px) {
+        padding: 10px;
+        width: 120px; 
+      }
+    }
+
+  li {
+    list-style: none;
     padding: 7px;
-    border-radius: 7px;
-    width: 155px;
-    text-align: center;
-    border: 1px soalid #fff;
   }
+}
 
-  @media (max-width: 1055px) {
-    display: none;
-  }
+  .enroll-now {
+  display: flex;
 
-  @media (max-width: 1464px) {
-    font-size: 15px;
-
-    a {
-      width: 120px;
-      &:hover {
-      padding: 10px;
-      /* width: 120px; */
+    @media (max-width: 1464px) {
+     li {
+      display: none ;
+      }
     }
-
-       li {
-      display: none;
-    }
-    i {
-      font-size: 40px !important;
+    
+    @media (max-width: 1200px) {
+      i {
+        margin-top: -5 px !important;
+        // font-size: 25px !important;
+      }
     }
   }
-  
+
 `;
 
 export const BurgerMenuWrapper = styled.div`
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: -30px;
-  padding-left: 0px;
-  position: relative;
-  background: rgb(255, 255, 255);
-  // width: 100%;
-  z-index: 10;
   display: none;
-  // border-radius: 7px;
+  border-radius: 7px;
+  margin-right: 113px;
+  margin-top: -45px;
 
-  &:hover > ul > a {
+  &:hover .nav-item a {
     display: block;
+    }
+  }
+
+  // @media (max-width: 350px) {
+  //   &:hover .CIBT-logo img{
+  //     display: none;
+  //   }
+  // }
+
+  @media (max-width: 470px) {
+    i {
+      font-size: 20px !important;
+      margin-bottom: 20px !important;
+    }
   }
 
   @media (max-width: 1055px) {
@@ -105,17 +150,34 @@ export const BurgerMenuWrapper = styled.div`
 `;
 
 export const NavItemWrapper = styled.ul`
-  > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -40px;
+  padding-left: 0px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  // height: 100vh;
+  z-index: 10;
+  display: block;
+
+  @media (max-width: 400px) {
+      font-size: 10px !important;
+  }
+
+  a {
     text-decoration: none;
     color: #87523d;
-    width: 100%;
+    width: 120%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 10px 5px 10px 5px;
-    /* display: flex; */
-
     display: none;
     border-radius: 7px;
 
@@ -123,13 +185,66 @@ export const NavItemWrapper = styled.ul`
       color: #fff;
       background: #87523d;
     }
+  }
 
-    > li {
-      list-style: none;
-      padding: 7px;
-    }
+  li {
+    list-style: none;
+    padding: 7px;
   }
 `;
+
+// export const BurgerMenuWrapper = styled.div`
+//   /* display: flex; */
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 15px;
+//   font-weight: bold;
+//   text-align: center;
+//   margin-top: -30px;
+//   padding-left: 0px;
+//   position: relative;
+//   background: rgb(255, 255, 255);
+//   // width: 100%;
+//   z-index: 10;
+//   display: none;
+//   // border-radius: 7px;
+
+//   &:hover > ul > a {
+//     display: block;
+//   }
+
+//   @media (max-width: 1055px) {
+//     display: block;
+//     margin-right: 0 !important;
+//   }
+// `;
+
+// export const NavItemWrapper = styled.ul`
+//   > a {
+//     text-decoration: none;
+//     color: #87523d;
+//     width: 100%;
+//     display: flex;
+//     text-align: center;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 10px 5px 10px 5px;
+//     /* display: flex; */
+
+//     display: none;
+//     border-radius: 7px;
+
+//     &:hover {
+//       color: #fff;
+//       background: #87523d;
+//     }
+
+//     > li {
+//       list-style: none;
+//       padding: 7px;
+//     }
+//   }
+// `;
 
 // /* ------------------media queries------------- */
 

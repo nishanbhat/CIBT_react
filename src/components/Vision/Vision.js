@@ -11,7 +11,12 @@ export default function Vision() {
         <LftWrapper>
           Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
           tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-          sit amet.Veniam quis notru exercit.
+          sit amet.Veniam quis notru exercit.Lorem ipsum dolor sit amet
+          consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis
+          notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru
+          exercit.Lorem ipsum dolor sit amet consectetur adipisicing elitsed
+          eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum
+          dolor sit amet.Veniam quis notru exercit.
         </LftWrapper>
         <RgtWrapper>
           <img

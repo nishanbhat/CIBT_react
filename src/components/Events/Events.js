@@ -16,7 +16,7 @@ export default function Events() {
           <u>View All</u>
         </a>
       </div>
-      <OwlCarouselWrapper>
+      <OwlCarouselWrapper className="owl-carousel owl-carousel-2">
         <div class="item">
           <div class="thumbnail">
             <img
@@ -26,10 +26,9 @@ export default function Events() {
           </div>
           <div class="caption">
             <p>
-              <b>Project Success Celebration</b>
-            </p>
-            <p>
-              <a href="">View</a>
+              <a href="">
+                <b>Project Success Celebration</b>
+              </a>
             </p>
           </div>
         </div>
@@ -42,10 +41,9 @@ export default function Events() {
           </div>
           <div class="caption">
             <p>
-              <b>Company Program</b>
-            </p>
-            <p>
-              <a href="">View</a>
+              <a href="">
+                <b>Company Program</b>
+              </a>
             </p>
           </div>
         </div>
@@ -58,11 +56,15 @@ export default function Events() {
           </div>
           <div class="caption">
             <p>
-              <b>New Year Eve</b>
+              <a href="">
+                <b>New Year Eve</b>
+              </a>
             </p>
-            <p>
-              <a href="">View</a>
-            </p>
+            {/* <p>
+              <a href="">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </p> */}
           </div>
         </div>
         <div class="item">
@@ -74,11 +76,15 @@ export default function Events() {
           </div>
           <div class="caption">
             <p>
-              <b>Joint Company Gathering</b>
+              <a href="">
+                <b>Joint Company Gathering</b>
+              </a>
             </p>
-            <p>
-              <a href="">View</a>
-            </p>
+            {/* <p>
+              <a href="">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </p> */}
           </div>
         </div>
       </OwlCarouselWrapper>

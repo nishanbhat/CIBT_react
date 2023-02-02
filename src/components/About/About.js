@@ -11,7 +11,12 @@ export default function About() {
         <p className="lft">
           Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
           tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-          sit amet.Veniam quis notru exercit.
+          sit amet.Veniam quis notru exercit.Lorem ipsum dolor sit amet
+          consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis
+          notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru
+          exercit.Lorem ipsum dolor sit amet consectetur adipisicing elitsed
+          eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum
+          dolor sit amet.Veniam quis notru exercit.
         </p>
         <div className="rgt">
           <img src="http://localhost:3000/assets/imgs/About-Us-04.png" alt="" />

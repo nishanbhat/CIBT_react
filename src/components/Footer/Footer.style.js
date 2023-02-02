@@ -6,7 +6,10 @@ export const FooterWrapper = styled.section`
   color: #fff;
   padding: 60px;
   width: 100%;
-  /* height: 455px; */
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 
@@ -14,24 +17,10 @@ export const FooterBodyWrapper = styled.div`
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  border-bottom: 1px solid;
+  width: 100%;
 
-  &:after {
-    content: "";
-    height: 1px;
-    /* width: 1400px; */
-    background: #cfcfce;
-    position: absolute;
-    margin: 60px;
-    margin-top: 345px;
-    left: 0;
-    right: 0;
-
-    @media (max-width: 890px) {
-      margin-top: 255px !important;
-    }
-  }
-
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     display: inline-block;
   }
 
@@ -44,7 +33,7 @@ export const FooterBodyWrapper = styled.div`
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     .quicklinks {
       width: 100%;
       margin-top: 30px;
@@ -55,6 +44,7 @@ export const FooterBodyWrapper = styled.div`
     }
     .contacts {
       width: 100%;
+      margin-top: 30px;
 
       .title-contacts {
         font-size: 15px;
@@ -75,7 +65,7 @@ img {
 }
 @media (max-width:500px)
 {
-    width: 70%;
+    width: 70% !important;
   }
 
 @media (max-width:890px){

@@ -6,13 +6,12 @@ export const ContactsWrapper = styled.section`
   text-align: center;
 
   @media (max-width: 290px) {
-    
       margin: 0;
-    
+  }
 `;
 
 export const TitleContactWrapper = styled.div`
-  font-size: 48px;
+  font-size: 40px;
   display: inline-block;
   position: relative;
   /* margin: 50px; */
@@ -22,9 +21,9 @@ export const TitleContactWrapper = styled.div`
         font-size: 30px;
       }
 
-  @media (max-width: 500px) {
-     font-size: 15px;
-      }
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
 
 
   &::after {
@@ -38,37 +37,39 @@ export const TitleContactWrapper = styled.div`
     left: 0;
     right: 0;
 
-    @media (max-width: 890px) {
-
-        height: 2px;
-        width: 50px;
-        bottom: 0px;
-    }
-      #contacts .lft {
-        font-size: 10px;
+      @media (max-width: 890px) {
+          height: 2px;
+          width: 50px;
+          bottom: -10px;
       }
-      
     }
-  }
 `;
 
 export const ContactDivWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
 export const LftWrapper = styled.div`
   width: 50%;
-  margin-left: 0px;
   border-radius: 5px;
   /* background-color: #f2f2f2; */
-  padding: 20px;
-  margin: 30px;
+  padding-top: 50px;
+  margin: 10px;
   text-align: left;
 
   @media (max-width: 290px) {
-    padding: 0px;
+    // padding: 0px;
+  }
+  @media (max-width: 600px) {
+    font-size: 8px;
+    width: 100%;
+    // padding: 30px;
+    // margin: 0px;
+  }
+  @media (max-width: 400px) {
+    font-size: 6px;
   }
 
   @media (max-width: 890px) {
@@ -80,8 +81,13 @@ export const RgtWrapper = styled.div`
   width: 40%;
   height: 80%;
 
+  @media (max-width: 600px) {
+    width: 0%;
+  }
+
   img {
     max-width: 100%;
+    float: right;
   }
 `;
 

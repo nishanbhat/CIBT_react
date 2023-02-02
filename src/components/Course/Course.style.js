@@ -7,7 +7,7 @@ export const CourseWrapper = styled.section`
   overflow: hidden;
 
   input[type="radio"] {
-  display: none;
+    display: none;
   }
 
   .view {
@@ -18,13 +18,14 @@ export const CourseWrapper = styled.section`
     font-weight: bold;
 
     a {
-    color: #87523d;
-    text-decoration: none;
-    padding: 10px;
+      color: #87523d;
+      text-decoration: none;
+      padding: 10px;
     }
 
     @media (max-width: 400px) {
-      text-align: center;
+      // text-align: center;
+      font-size: 10px;
     }
     @media (max-width: 600px) {
       padding: 0px;
@@ -33,21 +34,39 @@ export const CourseWrapper = styled.section`
 `;
 
 export const TitleCourseWrapper = styled.div`
-  font-size: 48px;
+  font-size: 40px;
   display: inline-block;
   position: relative;
 
+  @media (max-width: 890px) {
+    font-size: 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
+
   &:after {
-  content: "";
-  height: 3px;
-  width: 100px;
-  background: #212529;
-  position: absolute;
-  margin: auto;
-  bottom: -15px;
-  left: 0;
-  right: 0;
-}
+    content: "";
+    height: 3px;
+    width: 100px;
+    background: #212529;
+    position: absolute;
+    margin: auto;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 890px) {
+      height: 2px;
+      width: 50px;
+      bottom: -10px;
+    }
+    @media (max-width: 400px) {
+      height: 1px;
+      width: 25px;
+      bottom: -5px;
+    }
+  }
 `;
 
 export const CourseSliderWrapper = styled.div`
@@ -67,17 +86,17 @@ export const CourseBoxWrapper = styled.div`
   grid-template-rows: repeat(1, minmax(265px, 1fr));
   margin-top: 50px;
 
+  @media (max-width: 290px) {
+    // padding: 0;
+    // margin: 0 !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
   @media (max-width: 1240px) {
     font-size: 20px;
     /* margin: 50px; */
     /* padding: 50px; */
   }
-
-  @media (max-width: 290px) {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-
 `;
 export const BoxWrapper = styled.div`
   min-height: 200px;
@@ -86,96 +105,92 @@ export const BoxWrapper = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   .stamp img {
-  height: 50px;
-}
+    height: 50px;
+  }
 
-.thumbnail img {
-  height: 100%;
-  width: 100%;
-  /* margin-top: 50px; */
-}
+  .thumbnail img {
+    height: 100%;
+    width: 100%;
+    /* margin-top: 50px; */
+  }
 
-.coursetitle {
-  font-size: 15px;
-  padding: 15px;
-  margin-top: 30px;
-
-  @media (max-width: 1464px) {
-   .coursetitle {
+  .coursetitle {
     font-size: 15px;
-    padding: 10px;
-  }
-}
+    padding: 15px;
+    margin-top: 30px;
 
-@media (max-width: 1240px) {
-    min-height: 190px;
+    @media (max-width: 1464px) {
+      padding: 10px;
+    }
   }
+
+  // @media (max-width: 1240px) {
+  //   min-height: 190px;
+  // }
 
   @media (max-width: 768px) {
     margin: 20px 0 10px 70px;
-    width: calc(100% / 2 - 10px);
-}
-  @media (max-width: 600px) {
-      margin: 20px 0 10px 0;
-      width: 100%;
+    // width: calc(100% / 2 - 10px);
   }
+  @media (max-width: 600px) {
+    margin: 20px 0 10px 0 !important;
+    // width: 100%;
+  }
+  // @media (max-width: 400px) {
+  //   max-height: 100px !important;
+  //   width: 100%;
+  // }
 
   @media (max-width: 1464px) {
     min-height: 250px;
     margin: 10px;
   }
-
 `;
 
 export const CourseScrollButtomWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 20px;
   /* background: #000; */
 
   label {
-  height: 15px;
-  width: 15px;
-  border-radius: 20px;
-  margin: 0 4px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  background-color: #87523d;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: #87523d;
   }
-label.active {
-  width: 35px;
-}
+  label.active {
+    width: 35px;
+  }
 
-@media (max-width: 400px) {
+  @media (max-width: 400px) {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 50px;
-}
+  }
 `;
 
 export const InputOneWrapper = styled.input`
-&:checked ~ .course-scroll-button .one {
-  width: 35px;
-}
-&:checked ~ .course-scroll-button .two {
-  width: 15px;
-}
-
+  &:checked ~ .course-scroll-button .one {
+    width: 35px;
+  }
+  &:checked ~ .course-scroll-button .two {
+    width: 15px;
+  }
 `;
 
 export const InputTwoWrapper = styled.input`
-&:checked ~ .course-scroll-button .one {
-  width: 15px;
-}
-&:checked ~ .course-scroll-button .two {
-  width: 35px;
-}
-&:checked ~ .course-slider {
-  margin-left: -100%;
-}
+  &:checked ~ .course-scroll-button .one {
+    width: 15px;
+  }
+  &:checked ~ .course-scroll-button .two {
+    width: 35px;
+  }
+  &:checked ~ .course-slider {
+    margin-left: -100%;
+  }
 `;
-
-
-
- 

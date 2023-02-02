@@ -4,7 +4,8 @@ import {
   TitleServicesWrapper,
   GridContainerWrapper,
   ServiceBoxWrapper,
-  ContentWrapper
+  ContentWrapper,
+  Imagewrapper,
 } from "./Services.style";
 
 export default function Services() {
@@ -15,7 +16,10 @@ export default function Services() {
       </TitleServicesWrapper>
       <GridContainerWrapper>
         <ServiceBoxWrapper>
-          <img src="http://localhost:3000/assets/imgs/badge_grey1.png" alt="" />
+          <Imagewrapper
+            src="http://localhost:3000/assets/imgs/badge_grey.png"
+            alt=""
+          />
           <ContentWrapper>
             <div className="icon">
               <i className="fa-solid fa-book"></i>
@@ -26,7 +30,10 @@ export default function Services() {
           </ContentWrapper>
         </ServiceBoxWrapper>
         <ServiceBoxWrapper>
-          <img src="http://localhost:3000/assets/imgs/badge_grey1.png" alt="" />
+          <Imagewrapper
+            src="http://localhost:3000/assets/imgs/badge_grey.png"
+            alt=""
+          />
           <ContentWrapper>
             <div className="icon">
               <i className="fa-solid fa-list"></i>
@@ -37,18 +44,24 @@ export default function Services() {
           </ContentWrapper>
         </ServiceBoxWrapper>
         <ServiceBoxWrapper>
-          <img src="http://localhost:3000/assets/imgs/badge_grey1.png" alt="" />
+          <Imagewrapper
+            src="http://localhost:3000/assets/imgs/badge_grey.png"
+            alt=""
+          />
           <ContentWrapper>
             <div className="icon">
               <i className="fa-solid fa-users"></i>
             </div>
             <div className="service-text">
-              <b>Amazing classNamees</b>
+              <b>Amazing Classes</b>
             </div>
           </ContentWrapper>
         </ServiceBoxWrapper>
         <ServiceBoxWrapper>
-          <img src="http://localhost:3000/assets/imgs/badge_grey1.png" alt="" />
+          <Imagewrapper
+            src="http://localhost:3000/assets/imgs/badge_grey.png"
+            alt=""
+          />
           <ContentWrapper>
             <div className="icon">
               <i className="fa-solid fa-person-chalkboard"></i>
@@ -59,7 +72,10 @@ export default function Services() {
           </ContentWrapper>
         </ServiceBoxWrapper>
         <ServiceBoxWrapper>
-          <img src="http://localhost:3000/assets/imgs/badge_grey1.png" alt="" />
+          <Imagewrapper
+            src="http://localhost:3000/assets/imgs/badge_grey.png"
+            alt=""
+          />
           <ContentWrapper>
             <div className="icon">
               <i className="fa-sharp fa-solid fa-calendar"></i>
@@ -70,7 +86,10 @@ export default function Services() {
           </ContentWrapper>
         </ServiceBoxWrapper>
         <ServiceBoxWrapper>
-          <img src="http://localhost:3000/assets/imgs/badge_grey1.png" alt="" />
+          <Imagewrapper
+            src="http://localhost:3000/assets/imgs/badge_grey.png"
+            alt=""
+          />
           <ContentWrapper>
             <div className="icon">
               <i className="fa-sharp fa-solid fa-graduation-cap"></i>
