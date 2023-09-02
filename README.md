@@ -1,3 +1,14 @@
+
+![2](https://github.com/nishanbhat/CIBT_react/assets/57608125/4665a513-c105-4aa9-a1b7-b8a24a7c849e)
+![1](https://github.com/nishanbhat/CIBT_react/assets/57608125/48015191-6a30-42d5-94df-d0c6dc81e45a)
+![9](https://github.com/nishanbhat/CIBT_react/assets/57608125/75eccd6c-1fbc-4edd-b6e0-20c8daaad714)
+![8](https://github.com/nishanbhat/CIBT_react/assets/57608125/b336aa65-d8a0-416e-a7dc-f75ae3e591ce)
+![7](https://github.com/nishanbhat/CIBT_react/assets/57608125/db60d5e5-5830-4103-92b3-eb0b450cb037)
+![6](https://github.com/nishanbhat/CIBT_react/assets/57608125/4a7fad8a-6b69-4b4f-ac61-18b1c2501ace)
+![5](https://github.com/nishanbhat/CIBT_react/assets/57608125/55206480-6bd9-402f-933a-b3ca7ca84705)
+![4](https://github.com/nishanbhat/CIBT_react/assets/57608125/815cc79b-bd37-41ff-8379-2b0c388201bc)
+![3](https://github.com/nishanbhat/CIBT_react/assets/57608125/f35b1424-0aad-497e-8eb8-ab2060d6df95)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
